@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>shen | cvRunner</title>
+    <link rel="icon" href="pic.jpeg" type="image/x-icon" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <link rel="stylesheet" href="style.css">
+    <script>
+      function copyToClipBoard() {
+        var content = "cvrunner";
+        navigator.clipboard.writeText(content)
+            .then(() => {
+            console.log("Text copied to clipboard...")
+            alert("已复制：cvrunner")
+        })
+            .catch(err => {
+            console.log('Something went wrong', err);
+        })
+      }
+    </script>
+  </head>
+
+  <body>
+    <!-- Parallax Pixel Background Animation -->
+    <section class="animated-background">
+      <div id="stars1"></div>
+      <div id="stars2"></div>
+      <div id="stars3"></div>
+    </section>
+    <!-- End of Parallax Pixel Background Animation -->
+
+    <a id="profilePicture" href="#popup">
+      <img src="pic.jpeg" alt="Profile Picture">
+    </a>
+
+    <div class="overlay" id="popup">
+      <div class="popup">
+        <div class="popup-photo">
+          <!-- https://avatars0.githubusercontent.com/u/43749971 -->
+          <a href="pic.jpeg" target="_blank">
+            <img src="pic.jpeg" alt="Profile Picture">
+          </a>
+        </div>
+        <div class="popup-quote">
+          But... the sensation that I've lost something lingers for a longtime after I wake up.
+        </div>
+        <a class="popup-close" onclick="history.back()">&times;</a>
+      </div>
+    </div>
+
+    <div id="userName">
+      @shen
+    </div>
+
+    <div id="links">
+
+      <a class="link" href="#" target="_blank">
+        Blog
+      </a>
+
+
+      <a class="link" href="https://github.com/cvrunner" target="_blank">
+        <i class="fab fa-github">&nbsp;</i>Github
+      </a>
+
+      <div class="link" onclick="copyToClipBoard()">
+        微信/QQ/钉钉/抖音/Tg：cvrunner
+      </div>
+
+      <a class="link" href="https://link3.cc/cvrunner" target="_blank">
+        Link3主页
+      </a>
+
+      <a class="link" href="mailto:cvrunner@qq.com" target="_blank">
+        cvrunner@qq.com
+      </a>
+
+      <!-- <a class="link" href="https://www.linkedin.com/in/johnggli" target="_blank">
+        <i class="fab fa-linkedin">&nbsp;</i>Linkedin
+      </a>
+      <a class="link" href="https://www.facebook.com/johnggli" target="_blank">
+        <i class="fab fa-facebook">&nbsp;</i>Facebook
+      </a>
+      <a class="link" href="https://www.instagram.com/johnggli" target="_blank">
+        <i class="fab fa-instagram">&nbsp;</i>Instagram
+      </a>
+      <a class="link" href="https://twitter.com/johnggli" target="_blank">
+        <i class="fab fa-twitter">&nbsp;</i>Twitter
+      </a>
+      <a class="link" href="https://myanimelist.net/profile/johnggli" target="_blank">
+        <i class="fa fa-play-circle">&nbsp;</i>MyAnimeList
+      </a> -->
+    </div>
+
+    <div id="hashtag">
+      #BeHappy❤
+    </div>
+  </body>
+</html>
